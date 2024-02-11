@@ -16,5 +16,24 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+
+        {
+
+            String username = textBox1.Text;
+            String password = textBox2.Text;
+
+            var submitForm = (username != "" && password != "") ? username + " : " + password : "Fill out the required inputs!";
+
+            Console.WriteLine(submitForm);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
